@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flowing-text {
+  background: linear-gradient(90deg, #86fa7b, #c5378a, #4a00e0, #8e2de2, #42abdb);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: flowing-colors 2s ease infinite;
+}
+
+@keyframes flowing-colors {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
